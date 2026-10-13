@@ -260,7 +260,7 @@ main section p{
 
 .grafico-linha{
     position: relative;
-    top: -400px;
+    top: -800px;
     left: 750px;
     width: 700px;
 }
@@ -308,4 +308,36 @@ main section p{
 footer{
     margin: 0;
     margin-top: 20px;
+}
+
+.card-jornada {
+    background-color: var(--preto);
+    border: 2px solid var(--verde-principal);
+    border-radius: 40px;
+    width: 80%;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 40px;
+    position: relative;
+    top: 200px;
+}
+
+.card-jornada h3 {
+    color: var(--verde-principal);
+    font-size: var(--font-size-subtitulos);
+    margin-bottom: 20px;
+    position: static; /* sobrescreve o position relative genérico de h3 se necessário */
+}
+
+.card-jornada ol {
+    color: var(--branco);
+    font-size: var(--font-size-navbar);
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card-jornada ol li strong {
+    color: var(--verde-principal);
 }
